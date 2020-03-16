@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form to Yumin</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+  <!-- /*"*/ -->
+  <link rel="stylesheet" href="css/head_foot.css">
+</head>
+
+
+
+<body>
+  <div class="skip"><a href="#jump2">Skip to Main Content</a></div>
+  <header>
+    <div class="he">
+			Yumin Zhang
+		</div>
+    <nav>
+      <ul class="nav_links">
+				<li><a class="item" href="index.html">About</a></li>
+    		<li><a class="item" href="education.html">Education</a></li>
+    		<li><a class="item" href="research.html">Research & Interns</a></li>
+        <li><a class="item" href="travel.html">Travel</a></li>
+				<li  class="here"><a class="item" href="contact.html">Contact Me</a></li>
+    	</ul>
+  </nav>
+  </header>
+  <main>
+<h1 id="jump2">Contact Me</h1>
+
+</br>
+  <div class="flip-card" tabindex="0">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <!-- <img src="images/home/flow.jfif" alt="noimg"> -->
+        <h2 class="front">Wanna Know More About Me?</h2>
+      </div>
+      <div class="flip-card-back">
+        <h2 class="back">Let Me Know You First!</h2>
+        <p class="norm">My turn's over, and it's your turn to show now!</p>
+
+      </div>
+    </div>
+  </div>
+</br>
+  <form  action="index.html" method="post">
+  <fieldset>
+    <legend>Who Are You?</legend>
+    <div class="Contact">
+      <label for ="first">First Name:</label>
+      <input type="text" id ="first" name="fname" placeholder ="Your First Name"/>
+</br>
+      <label for ="last">Last Name:</label>
+      <input type="text" id ="last" name="lname" placeholder="Your Last Name"/>
+</br>
+      <label for ="email">Email:</label>
+      <input type="email" id="email" name ="pw"/>
+</br>
+      <label for ="addr">Address:</label>
+      <textarea id = "addr" required></textarea>
+
+    </div>
+
+    <div>
+   <br>Where Are You From?
+   <label><input type="checkbox" name ="game" value="us"/>U.S.</label>
+
+   <label><input type="checkbox" name ="game" value="china"/>China</label>
+
+   <label><input type="checkbox" name ="game"/>India</label>
+
+   <label><input type="checkbox" name ="game"/>Korea</label>
+
+   <label><input type="checkbox" name ="game"/>Other Countries</label>
+   </div>
+
+   <div>
+     <label> Select your age
+    <select name ="age">
+    <option> select </option>
+    <option> 15 </option>
+    <option> 16 </option>
+    <option> 17 </option>
+    <option> 18 </option>
+    <option> 19</option>
+    <option> 20 </option>
+    <option> 21 </option>
+    <option> more than 22 </option>
+    </select>
+    </label>
+ </div>
+
+ <div>
+     <input type="reset" value="reset"/>
+     <input type="submit" value="submit"/>
+  </div>
+  </fieldset>
+  </form>
+</main>
+  <footer>
+    <br/>
+    <p class="foot">&copy;2020 Yumin <br/>
+    yumzhang@umich.edu</p>
+  </footer>
+</body>

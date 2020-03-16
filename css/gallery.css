@@ -1,0 +1,272 @@
+main ul {
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.75) 0 1px 12px;
+	display: block;
+	/* left: 7.5%; */
+	margin: auto;
+	/* padding: 61.3% 0 0 0; */
+	position: relative;
+	width: 620px;
+	height: 620px;
+}
+
+	main ul:before {
+		background-color: rgba(233, 0, 0, 0.7);
+		border-bottom-left-radius: 4px;
+		color: #fff;
+		content: "paused";
+		display: block;
+		font-size: 0.7em;
+		font-weight: 700;
+		/* right: 0; */
+		opacity: 0;
+		padding: 0.2em 0.4em;
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		/* top: 0; */
+		z-index: 8;
+	}
+
+	main ul:hover:before {
+		opacity: 1;
+	}
+
+	main ul img {
+		display: block;
+		margin: 0 auto;
+		width: 600px;
+		height: 600px;
+	}
+
+	main ul:hover li,
+	main ul:hover img {
+		/*
+			NOTE: This property is being considered for removal from the spec
+			@see: http://www.w3.org/TR/css3-animations/#the-animation-play-state-property-
+		*/
+		-webkit-animation-play-state: paused;
+		-moz-animation-play-state: paused;
+	}
+
+main li {
+	left: 1.5%;
+	list-style: none inside;
+	overflow: hidden;
+	position: absolute;
+	top: 1.9%;
+	width: 97%;
+}
+
+/* - Special styles for the Falling demo - */
+
+
+/* - Fade In/Out -*/
+
+
+/* - Slide In/Out -*/
+
+main ul:nth-of-type(1) {
+	z-index: 9;
+}
+
+main ul:nth-of-type(1) img {
+	-webkit-animation-duration: 27s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-moz-animation-duration: 27s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease;
+	position: relative;
+}
+
+main ul:nth-of-type(1) li:nth-of-type(1) img {
+	-webkit-animation-name: slideOne;
+	-moz-animation-name: slideOne;
+	left: 0;
+}
+
+main ul:nth-of-type(1) li:nth-of-type(2) img {
+	-webkit-animation-name: slideTwo;
+	-moz-animation-name: slideTwo;
+	left: 100%;
+}
+
+main ul:nth-of-type(1) li:nth-of-type(3) img {
+	-webkit-animation-name: slideThree;
+	-moz-animation-name: slideThree;
+	left: 100%;
+}
+
+main ul:nth-of-type(1) li:nth-of-type(4) img {
+	-webkit-animation-name: slideFour;
+	-moz-animation-name: slideFour;
+	left: 100%;
+}
+
+main ul:nth-of-type(1) li:nth-of-type(5) img {
+	-webkit-animation-name: slideFive;
+	-moz-animation-name: slideFive;
+	left: 0;
+}
+
+main ul:nth-of-type(1) li:nth-of-type(6) img {
+	-webkit-animation-name: slideSix;
+	-moz-animation-name: slideSix;
+	left: 100%;
+}
+
+main ul:nth-of-type(1) li:nth-of-type(7) img {
+	-webkit-animation-name: slideSeven;
+	-moz-animation-name: slideSeven;
+	left: 100%;
+}
+
+main ul:nth-of-type(1) li:nth-of-type(8) img {
+	-webkit-animation-name: slideEight;
+	-moz-animation-name: slideEight;
+	left: 100%;
+}
+
+main ul:nth-of-type(1) li:nth-of-type(9) img {
+	-webkit-animation-name: slideNine;
+	-moz-animation-name: slideNine;
+	left: 100%;
+}
+
+@-webkit-keyframes slideOne {
+	0%, 10% { left: 0; }
+	11%, 98% { left: -100%; }
+	98.0001%, 99% { left: 100%; }
+	99%, 100% { left: 0; }
+}
+
+@-webkit-keyframes slideTwo {
+	0%, 10% { left: 100%; }
+	11%, 21% { left: 0; }
+	22%, 100% { left: -100%; }
+}
+
+@-webkit-keyframes slideThree {
+	0%, 21% { left: 100%; }
+	22%, 32% { left: 0; }
+	33%, 100% { left: -100%; }
+}
+
+@-webkit-keyframes slideFour {
+	0%, 32% { left: 100%; }
+	33%, 43% { left: 0; }
+	44%, 100% { left: -100%; }
+}
+
+@-webkit-keyframes slideFive {
+	0%, 43% { left: 100%; }
+	44%, 54% { left: 0; }
+	55%, 100% { left: -100%; }
+}
+
+@-webkit-keyframes slideSix {
+	0%, 54% { left: 100%; }
+	55%, 65% { left: 0; }
+	66%, 100% { left: -100%; }
+}
+
+@-webkit-keyframes slideSeven {
+	0%, 65% { left: 100%; }
+	66%, 76% { left: 0; }
+	77%, 100% { left: -100%; }
+}
+
+@-webkit-keyframes slideEight {
+	0%, 76% { left: 100%; }
+	77%, 87% { left: 0; }
+	88%, 100% { left: -100%; }
+}
+
+@-webkit-keyframes slideNine {
+	0%, 87% { left: 100%; }
+	88%, 98% { left: 0; }
+	99%, 100% { left: -100%; }
+}
+
+@-moz-keyframes slideOne {
+	0%, 10% { left: 0; }
+	11%, 98% { left: -100%; }
+	98.0001%, 99% { left: 100%; }
+	99%, 100% { left: 0; }
+}
+
+@-moz-keyframes slideTwo {
+	0%, 10% { left: 100%; }
+	11%, 21% { left: 0; }
+	22%, 100% { left: -100%; }
+}
+
+@-moz-keyframes slideThree {
+	0%, 21% { left: 100%; }
+	22%, 32% { left: 0; }
+	33%, 100% { left: -100%; }
+}
+
+@-moz-keyframes slideFour {
+	0%, 32% { left: 100%; }
+	33%, 43% { left: 0; }
+	44%, 100% { left: -100%; }
+}
+
+@-moz-keyframes slideFive {
+	0%, 43% { left: 100%; }
+	44%, 54% { left: 0; }
+	55%, 100% { left: -100%; }
+}
+
+@-moz-keyframes slideSix {
+	0%, 54% { left: 100%; }
+	55%, 65% { left: 0; }
+	66%, 100% { left: -100%; }
+}
+
+@-moz-keyframes slideSeven {
+	0%, 65% { left: 100%; }
+	66%, 76% { left: 0; }
+	77%, 100% { left: -100%; }
+}
+
+@-moz-keyframes slideEight {
+	0%, 76% { left: 100%; }
+	77%, 87% { left: 0; }
+	88%, 100% { left: -100%; }
+}
+
+@-moz-keyframes slideNine {
+	0%, 87% { left: 100%; }
+	88%, 98% { left: 0; }
+	99%, 100% { left: -100%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* border!!!!!!!!!!!!!!!!!!!! */
+/* border!!!!!!!!!!!!!!!!!!!!! */
+/* grid */
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto,10);
+}
+.bt,.dt,.ct{
+	border-bottom: 2px solid #50C7C7;
+	margin: auto;
+	text-align: center;
+}
+.bp,.dp,.cp{
+	text-align: center;
+}

@@ -1,0 +1,39 @@
+.efz{
+  border: 2px solid black;
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: black;
+  height: 200px;                /* Parallax effect */
+  background-color: white;
+
+  background-image: url("../images/education/efz.jpg");
+  background-attachment: fixed;
+}
+.sjtu{
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 200px;                /* Parallax effect */
+  background-color: black;
+
+  background-image: url("../images/education/sjtu.jpg");
+  background-attachment: fixed;
+}
+.um{
+
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 200px;                /* Parallax effect */
+  background-color: black;
+
+  background-image: url("../images/education/um.jpg");
+  background-attachment: fixed;
+
+}
