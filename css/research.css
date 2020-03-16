@@ -92,7 +92,7 @@ img{
 }
 
 
-@media all and (min-width:1500px){
+@media all and (min-width:1024px){
   .container{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 30px repeat(500px,10);
